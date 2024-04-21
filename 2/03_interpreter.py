@@ -156,7 +156,7 @@ def visit_BinOp(self, node):
     elif node.op.type == TokenType.MUL:
         return self.visit(node.left) * self.visit(node.right)
     elif node.op.type == TokenType.DIV:
-        return self.visit(node.left) // self.visit(node.right)
+        return self.visit(node.left) / self.visit(node.right)
     else:
         raise Exception("Невідомий оператор: " + node.op.type)
 

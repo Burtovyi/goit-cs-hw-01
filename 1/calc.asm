@@ -7,9 +7,9 @@ section .data
 
 section .text
 _start:
-    mov al, [a]          ; 
+    mov al, [b]          ; 
     add al, [c]          ; 
-    sub al, [b]          ; 
+    sub al, [a]          ; 
 
     ; 
     add al, 30h          ; 
